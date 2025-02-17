@@ -1,0 +1,193 @@
+[
+    {
+      "type": "banner",
+      "description": "Spring Collection Now Live!",
+      "image": "/images/pocket-watch-1637396_1280.jpg"
+    },
+    {
+      "type": "products",
+      "productType": "Electronics",
+      "isBuyable": true,
+      "content": [
+        {
+          "image": "/images/product-8779366_1280.jpg",
+          "name": "Galaxy Smartphone",
+          "price": 299.99
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "MacBook Pro",
+          "price": 1899.99
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Gaming Laptop",
+          "price": 1299.99
+        },
+        {
+          "image": "/images/high-angle-clothes-bed-fast-fashion-concept.jpg",
+          "name": "Wireless Earbuds",
+          "price": 199.99
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Smart Watch",
+          "price": 399.99
+        }
+      ]
+    },
+    {
+      "type": "products",
+      "productType": "Furniture",
+      "isBuyable": false,
+      "content": [
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Ergonomic Office Chair"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Wooden Dining Table"
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Comfort Recliner"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Modern Sofa"
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Desk with Shelves"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Adjustable Office Chair"
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Side Table"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Dining Chair Set"
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "description": "Flash Sale! Limited Time Only.",
+      "image": "/images/banner-1050629_1280.jpg"
+    },
+    {
+      "type": "products",
+      "productType": "Accesories",
+      "isBuyable": false,
+      "content": [
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Leather Office Chair"
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Solid Oak Dining Table"
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Executive Desk"
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Comfy Lounge Chair"
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Glass Coffee Table"
+        },
+        {
+          "image": "/images/make-up-1984115_1280.jpg",
+          "name": "Storage Cabinet"
+        }
+      ]
+    },
+    {
+      "type": "products",
+      "productType": "Gadgets",
+      "isBuyable": false,
+      "content": [
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Noise Cancelling Headphones"
+        },
+        {
+          "image": "/images/high-angle-clothes-bed-fast-fashion-concept.jpg",
+          "name": "Smart Home Hub"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Fitness Tracker"
+        },
+        {
+          "image": "/images/high-angle-clothes-bed-fast-fashion-concept.jpg",
+          "name": "Bluetooth Speaker"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "4K UHD TV"
+        },
+        {
+          "image": "/images/high-angle-clothes-bed-fast-fashion-concept.jpg",
+          "name": "Smart Lightbulbs"
+        }
+      ]
+    },
+    {
+      "type": "products",
+      "productType": "Home Appliances",
+      "isBuyable": false,
+      "content": [
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Office Chair"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Dining Table"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Coffee Table"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Bookshelf"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Armchair"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Storage Bench"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "TV Stand"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Console Table"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Bar Cart"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Dining Set"
+        }
+      ]
+    }
+  ]
+  

@@ -1,101 +1,144 @@
+"use client";
 import Image from "next/image";
-
+import { useState } from "react";
+import dataJs from "./lib/data.json";
+import ProductCards from "@/components/slider/slider";
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false),
+    [data, setData] = useState(dataJs);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  const handleFilter = (e) => {
+    const { value } = e.target;
+    console.log(value);
+    const filtered = data.filter(
+      (item) => {
+        if (item.type === "products") {
+          return item.productType
+            .toLowerCase()
+            .includes(value.toLowerCase());
+        }
+        return true;
+      });
+    setData(filtered)
+  };
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <>
+      <header className="bg-gradient-to-r from-blue-500 shadow-md">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          {/* Logo */}
+          <div className="text-2xl font-bold text-blue-600">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/images/shop-4071232_1280.png"
+              alt="Profile"
+              width={100}
+              height={40}
+              className="rounded-full h-10 w-"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+
+          {/* Hamburger Menu (Mobile) */}
+          <button className="md:hidden focus:outline-none" onClick={toggleMenu}>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+
+          {/* Navigation Links (Desktop) */}
+          <div className="hidden md:flex md:items-center md:space-x-6">
+            {/* Input Field */}
+            <input
+              type="text"
+              placeholder="Search..."
+              onChange={handleFilter}
+              className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            {/* Profile Logo */}
+            <div className="flex items-center space-x-2">
+              <Image
+                src="/images/portrait-6040876_1280.jpg"
+                alt="Profile"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
+              <span className="text-gray-700">Amanda</span>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        {/* Mobile Menu (Collapsible) */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white shadow-md">
+            <div className="flex flex-col space-y-4 p-4">
+              {/* Input Field */}
+              <input
+                type="text"
+                placeholder="Search..."
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+
+              {/* Profile Logo */}
+              <div className="flex items-center space-x-2">
+                <Image
+                  src="/images/portrait-6040876_1280.jpg"
+                  alt="Profile"
+                  width={40}
+                  height={40}
+                  className="rounded-full"
+                />
+                <span className="text-gray-700">John Doe</span>
+              </div>
+            </div>
+          </div>
+        )}
+      </header>
+      <div className="px-4 py-2">
+        {data &&
+          data.map((item, index) => (
+            <div key={index} className="w-full p-2">
+              {item.type === "banner" ? (
+                <>
+                  <div className="w-full">
+                    <Image
+                      src={item?.image} // image URL
+                      alt="Example Image"
+                      layout="responsive" // This ensures the image is responsive
+                      width={1920} // Set the original width of the image
+                      height={1080} // Set the original height of the image
+                      className="rounded-lg shadow-lg"
+                    />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="w-full p-4">
+                    <h1 className="text-2xl font-semibold mb-3">
+                      {item?.productType}
+                    </h1>
+                    <ProductCards
+                      content={item?.content}
+                      isBuyable={item?.isBuyable}
+                    />
+                  </div>
+                </>
+              )}
+            </div>
+          ))}
+      </div>
+    </>
   );
 }
