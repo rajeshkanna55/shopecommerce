@@ -4,10 +4,11 @@ import Slider from "react-slick";
 
 function ProductCards({ content, isBuyable, isViewable }) {
   var settings = {
+    className:'slider variable-width',
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 8,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
@@ -67,7 +68,7 @@ function ProductCards({ content, isBuyable, isViewable }) {
 
               {/* Buy Button if Buyable */}
               {isBuyable && (
-                <button className="mt-4 w-full py-2 border border-red-500 text-red-500 font-semibold rounded-lg hover:bg-blue-700 transition">
+                <button className="mt-4 w-full py-2 border border-red-500 text-red-500 font-semibold rounded-lg hover:bg-red-500 hover:text-white transition">
                   Buy Now
                 </button>
               )}
