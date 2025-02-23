@@ -8,7 +8,43 @@
       "type": "products",
       "productType": "Electronics",
       "isBuyable": true,
+      "isViewable" : false,
       "content": [
+        {
+          "image": "/images/product-8779366_1280.jpg",
+          "name": "Galaxy Smartphone",
+          "price": 299.99
+        },
+        {
+          "image": "/images/product-8779366_1280.jpg",
+          "name": "Galaxy Smartphone",
+          "price": 299.99
+        },
+        {
+          "image": "/images/product-8779366_1280.jpg",
+          "name": "Galaxy Smartphone",
+          "price": 299.99
+        },
+        {
+          "image": "/images/product-8779366_1280.jpg",
+          "name": "Galaxy Smartphone",
+          "price": 299.99
+        },
+        {
+          "image": "/images/product-8779366_1280.jpg",
+          "name": "Galaxy Smartphone",
+          "price": 299.99
+        },
+        {
+          "image": "/images/product-8779366_1280.jpg",
+          "name": "Galaxy Smartphone",
+          "price": 299.99
+        },
+        {
+          "image": "/images/product-8779366_1280.jpg",
+          "name": "Galaxy Smartphone",
+          "price": 299.99
+        },
         {
           "image": "/images/product-8779366_1280.jpg",
           "name": "Galaxy Smartphone",
@@ -40,6 +76,7 @@
       "type": "products",
       "productType": "Furniture",
       "isBuyable": false,
+      "isViewable" : false,
       "content": [
         {
           "image": "/images/make-up-1984115_1280.jpg",
@@ -84,6 +121,7 @@
       "type": "products",
       "productType": "Accesories",
       "isBuyable": false,
+      "isViewable" : false,
       "content": [
         {
           "image": "/images/make-up-1984115_1280.jpg",
@@ -115,6 +153,7 @@
       "type": "products",
       "productType": "Gadgets",
       "isBuyable": false,
+      "isViewable" : true,
       "content": [
         {
           "image": "/images/lipstick-5893460_1280.jpg",
@@ -123,6 +162,18 @@
         {
           "image": "/images/high-angle-clothes-bed-fast-fashion-concept.jpg",
           "name": "Smart Home Hub"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Noise Cancelling Headphones"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Noise Cancelling Headphones"
+        },
+        {
+          "image": "/images/lipstick-5893460_1280.jpg",
+          "name": "Noise Cancelling Headphones"
         },
         {
           "image": "/images/lipstick-5893460_1280.jpg",
@@ -146,6 +197,7 @@
       "type": "products",
       "productType": "Home Appliances",
       "isBuyable": false,
+      "isViewable" : false,
       "content": [
         {
           "image": "/images/lipstick-5893460_1280.jpg",

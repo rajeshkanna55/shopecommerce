@@ -25,12 +25,12 @@ export default function Home() {
   };
   return (
     <>
-      <header className="bg-gradient-to-r from-blue-500 shadow-md">
+      <header  style={{ background: "linear-gradient(to bottom, #ECDCFF, #fff)" }}>
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Logo */}
           <div className="text-2xl font-bold text-blue-600">
             <Image
-              src="/images/shop-4071232_1280.png"
+              src="https://cdn.zeptonow.com/web-static-assets-prod/artifacts/12.52.1/images/header/primary-logo.svg"
               alt="Profile"
               width={100}
               height={40}
@@ -62,6 +62,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search..."
+              style={{width: '55vw'}}
               onChange={handleFilter}
               className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -75,7 +76,15 @@ export default function Home() {
                 height={40}
                 className="rounded-full"
               />
-              <span className="text-gray-700">Amanda</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Image
+                src="/images/portrait-6040876_1280.jpg"
+                alt="Profile"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
             </div>
           </div>
         </div>
@@ -132,6 +141,7 @@ export default function Home() {
                     <ProductCards
                       content={item?.content}
                       isBuyable={item?.isBuyable}
+                      isViewable={item?.isViewable}
                     />
                   </div>
                 </>
